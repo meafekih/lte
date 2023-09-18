@@ -1,0 +1,77 @@
+
+{% extends "pages/base.html" %}
+
+
+{% block title %}
+  FAQ
+{% endblock %}
+
+{% block content %}
+
+<section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Contact us</h1>
+        </div>
+     
+      </div>
+    </div><!-- /.container-fluid -->
+  </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-12" id="accordion">
+
+
+                <div class="card card-primary card-outline">
+                    <a class="d-block w-100" data-toggle="collapse" href="#collapseOne">
+                        <div class="card-header">
+                            <h4 class="card-title w-100">
+                                1. Lorem ipsum dolor sit amet
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card card-primary card-outline">
+                    <a class="d-block w-100" data-toggle="collapse" href="#collapseTwo">
+                        <div class="card-header">
+                            <h4 class="card-title w-100">
+                                2. Aenean massa
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        </div>
+                    </div>
+                </div>
+
+
+         
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3 text-center">
+                <p class="lead">
+                    <a href="{% url 'contact_us' %}">Contact us</a>,
+                    if you found not the right anwser or you have a other question?<br />
+                </p>
+            </div>
+        </div>
+    </section>
+ 
+
+
+
+{% endblock %}

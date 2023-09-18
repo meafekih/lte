@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Website{% endblock %}</title>
+
+    {% include 'pages/css.html' %}
+</head>
+
+<body class="hold-transition layout-top-nav">    
+    <div class="wrapper">
+        
+        <header>
+            {% include 'pages/nav.html' %}
+        </header>
+ 
+        
+        <div class="content-wrapper">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <footer class="main-footer">
+            {% include 'pages/footer.html' %}
+        </footer>
+
+    </div>
+
+
+    {% include 'pages/js.html' %}
+{% block scripts %}
+{% endblock %}
+
+
+
+</body>
+</html>
+
+
+
